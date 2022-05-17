@@ -1,3 +1,4 @@
+import AirQuality from '../AirQuality/AirQuality'
 import style from './style.module.css'
 
 
@@ -29,6 +30,7 @@ const WeatherMainInfo = ({ weather }) => {
         loading="lazy" 
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
+      <AirQuality weather={weather} />
     </div>
   )
 }

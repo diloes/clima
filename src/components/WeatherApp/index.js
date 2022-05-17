@@ -30,7 +30,7 @@ const WeatherApp = () => {
     try {
 
       // fetch a la url que tenemos en la variable de entorno(.env) + nuestra API Key + 'city'
-      const request = await fetch(`${process.env.REACT_APP_URL}&key=${process.env.REACT_APP_KEY}&q=${city}`)
+      const request = await fetch(`${process.env.REACT_APP_URL}key=${process.env.REACT_APP_KEY}&q=${city}&aqi=yes`)
 
       // Guardamos la response en formato json en 'json'
       const json = await request.json()
