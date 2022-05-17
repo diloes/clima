@@ -2,6 +2,7 @@ import AirQuality from '../AirQuality/AirQuality'
 import style from './style.module.css'
 
 
+{/* Componente hijo que muestra la información del clima */}
 const WeatherMainInfo = ({ weather }) => {
   
   return (

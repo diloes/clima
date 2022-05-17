@@ -1,3 +1,8 @@
+# Clima App
+
+Se trata de una aplicación para obtener el clima de una ciudad.
+Para ello utilizamos weather API. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

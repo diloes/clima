@@ -44,7 +44,13 @@ const WeatherApp = () => {
       console.error(error)
     }
   }
-
+ 
+  /**
+   * Esta función pone la variable de estado 'weather' en null
+   * y ejecuta la función 'loadinfo'.
+   * Se ejecuta en el submit del 'WeatherForm'
+   * @param { string } city Ciudad que queremos consultar
+   */
   const handleChangeCity = city => {
     setWeather(null)
     loadInfo(city)
