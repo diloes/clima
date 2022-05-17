@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
+import Loading from '../Loading/Loading'
 import WeatherForm from '../WeatherForm'
 import WeatherMainInfo from '../WeatherMainInfo'
+
+import style from './style.module.css'
 
 const WeatherApp = () => {
 
@@ -48,12 +51,16 @@ const WeatherApp = () => {
   } 
 
   return (
-    <div>
+    <div className={style.weatherApp}>
       {/* Componente hijo que muestra input para poner la ciudad */}
       <WeatherForm onChangeCity={handleChangeCity} />
 
-      {/* Componente hijo que muestra la información del clima */}
-      <WeatherMainInfo weather={weather} />
+      { weather // Si weather está...
+      /* Componente hijo que muestra la información del clima */
+      ? <WeatherMainInfo weather={weather} /> 
+      /* Si no está muestra: */
+      : <Loading /> }
+      
     </div>
   )
 }

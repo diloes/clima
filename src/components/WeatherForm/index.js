@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+import style from './style.module.css'
 
 const WeatherForm = ({ onChangeCity }) => {
 
@@ -19,8 +20,8 @@ const WeatherForm = ({ onChangeCity }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input onChange={handleChange} />
+    <form className={style.container} onSubmit={handleSubmit}>
+      <input className={style.input} onChange={handleChange} />
     </form>
   )
 }

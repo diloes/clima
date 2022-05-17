@@ -1,0 +1,33 @@
+.mainInfo {
+  background: rgb(140,164,88);
+  background: linear-gradient(90deg, rgba(140,164,88,1) 0%, rgba(71,71,119,0.9990589985994398) 31%, rgba(164,76,19,1) 62%);
+  padding: 40px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.city {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.country {
+  font-size: 20px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.condition {
+  font-size: 24px;
+}
+
+.current {
+  font-size: 38px;
+  font-weight: bold;
+}
